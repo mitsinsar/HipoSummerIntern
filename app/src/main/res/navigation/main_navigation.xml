@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/membersFragment">
+
+    <fragment
+        android:id="@+id/membersFragment"
+        android:name="com.hipo.summerintern.members.ui.MembersFragment"
+        android:label="MembersFragment"
+        tools:layout="@layout/fragment_members" >
+        <action
+            android:id="@+id/action_membersFragment_to_addNewMemberFragment"
+            app:destination="@id/addNewMemberFragment" />
+        <action
+            android:id="@+id/action_membersFragment_to_memberDetailFragment"
+            app:destination="@id/memberDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewMemberFragment"
+        android:name="com.hipo.summerintern.addnewmember.AddNewMemberFragment"
+        android:label="AddNewMemberFragment"
+        tools:layout="@layout/fragment_add_new_member"/>
+    <fragment
+        android:id="@+id/memberDetailFragment"
+        android:name="com.hipo.summerintern.memberdetail.MemberDetailFragment"
+        android:label="MemberDetailFragment"
+        tools:layout="@layout/fragment_member_detail">
+        <argument
+            android:name="memberListItem"
+            app:argType="com.hipo.summerintern.members.ui.model.MemberListItem" />
+    </fragment>
+</navigation>

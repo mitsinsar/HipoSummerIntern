@@ -1,0 +1,39 @@
+ext {
+    targets = [
+            compileSdkVersion: 31,
+            minSdkVersion    : 24,
+            targetSdkVersion : 31
+    ]
+
+    application = [
+            applicationId: 'com.hipo.summerintern',
+            versionCode  : 1,
+            versionName  : "1.0.0"
+    ]
+
+    libVersions = [
+            coroutines      : '1.6.0',
+            material        : '1.6.1',
+            appCompat       : '1.4.2',
+            legacySupport   : '1.0.0',
+            lifecycle       : '2.4.1',
+            lifecycleExt    : '2.2.0',
+            constraintLayout: '2.1.4',
+            fragment        : '1.4.1',
+            coreKtx         : '1.8.0',
+            navigation      : '2.4.2',
+            retrofit        : '2.9.0',
+            okhttp          : '4.3.1',
+            dagger          : '2.26',
+            daggerViewModel : '1.0.0-alpha03',
+            room            : '2.4.2',
+            glide           : '4.9.0',
+            viewBinding     : '7.2.1'
+    ]
+
+    testLibVersions = [
+            junit   : '4.13.2',
+            runner  : '1.4.0',
+            espresso: '3.4.0'
+    ]
+}
