@@ -16,7 +16,7 @@ class MembersPreviewUseCase @Inject constructor(
 
     fun getInitialPreview(): MembersPreview = membersPreviewMapper.createInitialPreview()
 
-    suspend fun getMemberListItems(): Flow<MembersPreview> {
+    suspend fun getMemberlisitems(): Flow<MembersPreview> {
         return getMembersUseCase.getMembers()
             .map { memberList ->
                 memberList.map { member ->
