@@ -12,12 +12,22 @@
         android:clipToPadding="false"
         android:padding="@dimen/spacing_normal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@id/addNewMemberButton"
+        app:layout_constraintBottom_toTopOf="@id/sortMembersButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item_member" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sortMembersButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_normal"
+        android:layout_marginBottom="@dimen/spacing_xxsmall"
+        android:text="@string/sort_members"
+        app:layout_constraintBottom_toTopOf="@id/addNewMemberButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addNewMemberButton"

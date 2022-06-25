@@ -50,6 +50,7 @@ class MembersFragment : BaseFragment(R.layout.fragment_members) {
         with(binding) {
             membersRecyclerView.adapter = membersAdapter
             addNewMemberButton.setOnClickListener { navToAddNewMember() }
+            sortMembersButton.setOnClickListener { navToSortMembers() }
         }
     }
 
@@ -65,6 +66,10 @@ class MembersFragment : BaseFragment(R.layout.fragment_members) {
 
     private fun navToMemberDetail(memberListItem: MemberListItem) {
         nav(MembersFragmentDirections.actionMembersFragmentToMemberDetailFragment(memberListItem))
+    }
+
+    private fun navToSortMembers() {
+        nav(MembersFragmentDirections.actionMembersFragmentToSortMembersFragment())
     }
 
     private fun initMembersPreview(membersPreview: MembersPreview) {
