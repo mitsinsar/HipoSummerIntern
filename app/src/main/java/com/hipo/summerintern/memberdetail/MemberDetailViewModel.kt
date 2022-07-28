@@ -17,6 +17,6 @@ class MemberDetailViewModel @Inject constructor(
     fun getMemberName() = memberListItem.name
 
     companion object {
-        private const val MEMBER_ITEM_KEY = "memberListItem"
+        private const val MEMBER_ITEM_KEY = "memberLstItem"
     }
 }

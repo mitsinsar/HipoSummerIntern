@@ -15,7 +15,6 @@ import com.hipo.summerintern.utils.viewbinding.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.FlowCollector
 
-@AndroidEntryPoint
 class MembersFragment : BaseFragment(R.layout.fragment_members) {
 
     private val toolbarConfiguration = ToolbarConfiguration(

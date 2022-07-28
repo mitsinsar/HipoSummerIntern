@@ -4,10 +4,8 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.hipo.summerintern.core.database.SummerInternDatabase.Companion.LATEST_DB_VERSION
 import com.hipo.summerintern.members.data.dao.MemberDao
-import com.hipo.summerintern.members.data.model.entity.MemberEntity
 
 @Database(
-    entities = [MemberEntity::class],
     version = LATEST_DB_VERSION,
     exportSchema = true
 )
